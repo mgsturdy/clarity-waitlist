@@ -98,13 +98,13 @@ export default function Home() {
         </div>
         
         {/* Scroll Indicator */}
-        <div className="mt-12 scroll-indicator">
-          <ChevronDown className="w-6 h-6 opacity-40" strokeWidth={1} />
-        </div>
+        <a href="#waitlist-form" className="mt-12 scroll-indicator block">
+          <ChevronDown className="w-10 h-10 opacity-60 hover:opacity-100 transition-opacity" strokeWidth={1.5} />
+        </a>
       </section>
 
-      {/* Value Props + Form Section */}
-      <section className="min-h-screen flex flex-col justify-center items-center px-6 lg:px-12 py-20">
+      {/* Form Section */}
+      <section id="waitlist-form" className="min-h-screen flex flex-col justify-center items-center px-6 lg:px-12 py-20">
         <div className="max-w-4xl mx-auto w-full">
           
           {/* Form */}
