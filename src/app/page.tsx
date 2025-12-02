@@ -6,6 +6,7 @@ import { ChevronDown } from "lucide-react";
 export default function Home() {
   const [scrolled, setScrolled] = useState(false);
   const [formData, setFormData] = useState({
+    name: "",
     email: "",
     phone: "",
     inheritanceSize: "",
@@ -35,6 +36,7 @@ export default function Home() {
             "Content-Type": "application/json",
           },
           body: JSON.stringify({
+            name: formData.name,
             email: formData.email,
             phone: formData.phone,
             inheritance_size: formData.inheritanceSize,
@@ -46,7 +48,7 @@ export default function Home() {
 
       if (response.ok) {
         setIsSubmitted(true);
-        setFormData({ email: "", phone: "", inheritanceSize: "", userType: "" });
+        setFormData({ name: "", email: "", phone: "", inheritanceSize: "", userType: "" });
       } else {
         alert("Something went wrong. Please try again.");
       }
@@ -122,6 +124,18 @@ export default function Home() {
               </div>
             ) : (
               <form onSubmit={handleSubmit} className="space-y-5">
+                <div>
+                  <input
+                    type="text"
+                    required
+                    value={formData.name}
+                    onChange={(e) => setFormData({ ...formData, name: e.target.value })}
+                    className="w-full px-5 py-4 bg-white border border-black/20 focus:border-black focus:outline-none transition-colors font-body text-lg"
+                    placeholder="Full name *"
+                    disabled={isSubmitting}
+                  />
+                </div>
+                
                 <div>
                   <input
                     type="email"
