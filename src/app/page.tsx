@@ -49,21 +49,17 @@ export default function Home() {
           </p>
           
           <h1 className="font-serif text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-medium tracking-tight leading-[1.1] mb-8">
-            Unlocking the $124 Trillion Wealth Transfer
+            We&apos;re making inheritance easier, faster and accessible now.
           </h1>
           
           <div className="w-16 h-px bg-black mx-auto mb-8" />
           
-          <p className="font-body text-xl sm:text-2xl leading-relaxed mb-6">
-            Get up to 50% of your inheritance now—before or during probate—at half the cost of existing providers.
-          </p>
-          
-          <p className="font-body text-lg opacity-80 mb-8">
+          <p className="font-body text-xl sm:text-2xl leading-relaxed mb-8">
             The first fully online marketplace for inheritance advances.
           </p>
           
           <p className="font-body text-lg font-semibold">
-            Join the waitlist for priority access + exclusive lower rates.
+            Join the waitlist below for priority access + exclusive lower rates.
           </p>
         </div>
         
