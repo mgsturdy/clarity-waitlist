@@ -89,7 +89,7 @@ export default function Home() {
           <div className="w-16 h-px bg-black mx-auto mb-8" />
           
           <p className="font-body text-xl sm:text-2xl leading-relaxed mb-8">
-            The first fully online marketplace for inheritance advances.
+            The only marketplace that funds you before your parents pass—or while you&apos;re stuck in probate.
           </p>
           
           <p className="font-body text-lg font-semibold">
@@ -109,6 +109,9 @@ export default function Home() {
           
           {/* Form */}
           <div className="max-w-lg mx-auto">
+            <p className="font-body text-sm uppercase tracking-[0.2em] text-center mb-4 opacity-60">
+              Join 3,000 others waiting for theirs
+            </p>
             <p className="font-serif text-2xl sm:text-3xl font-medium text-center mb-10">
               Be first in line when we launch.
             </p>
@@ -213,17 +216,6 @@ export default function Home() {
               </form>
             )}
             
-            <div className="mt-10 pt-8 border-t border-black/10 text-center">
-              <p className="font-body opacity-60 mb-3">Or book a quick 10-minute call to discuss your situation</p>
-              <a
-                href="https://calendly.com/mg-mattgoulet"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-block font-body text-lg underline underline-offset-4 hover:opacity-60 transition-opacity"
-              >
-                Schedule a Call →
-              </a>
-            </div>
           </div>
         </div>
       </section>
