@@ -1,9 +1,11 @@
 "use client";
 
 import { useState, useEffect } from "react";
+import { useRouter } from "next/navigation";
 import { ChevronDown } from "lucide-react";
 
 export default function Home() {
+  const router = useRouter();
   const [scrolled, setScrolled] = useState(false);
   const [formData, setFormData] = useState({
     name: "",
@@ -47,8 +49,7 @@ export default function Home() {
       );
 
       if (response.ok) {
-        setIsSubmitted(true);
-        setFormData({ name: "", email: "", phone: "", inheritanceSize: "", userType: "" });
+        router.push("/thank-you");
       } else {
         alert("Something went wrong. Please try again.");
       }
