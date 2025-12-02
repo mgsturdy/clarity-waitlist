@@ -13,8 +13,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Clarity Finance - Join the Waitlist",
-  description: "The future of personal finance management. Join the waitlist for early access.",
+  title: "Clarity Finance - Unlock Your Inheritance",
+  description: "The first marketplace for probate and pre-probate inheritance advances. Access your wealth today.",
 };
 
 export default function RootLayout({

@@ -1,4 +1,4 @@
-import { ArrowRight, CheckCircle2, Shield, Zap } from "lucide-react";
+import { ArrowRight, Banknote, Clock, Lock, ShieldCheck } from "lucide-react";
 import Link from "next/link";
 
 export default function Home() {
@@ -7,13 +7,13 @@ export default function Home() {
       {/* Header */}
       <header className="w-full py-6 px-4 sm:px-6 lg:px-8 border-b border-gray-100 dark:border-gray-800">
         <div className="max-w-7xl mx-auto flex justify-between items-center">
-          <div className="font-bold text-2xl tracking-tighter">Clarity</div>
+          <div className="font-bold text-2xl tracking-tighter">Clarity Finance</div>
           <nav className="hidden sm:flex gap-6">
-            <Link href="#features" className="text-sm font-medium hover:text-primary transition-colors">
-              Features
+            <Link href="#products" className="text-sm font-medium hover:text-primary transition-colors">
+              Products
             </Link>
-            <Link href="#about" className="text-sm font-medium hover:text-primary transition-colors">
-              About
+            <Link href="#how-it-works" className="text-sm font-medium hover:text-primary transition-colors">
+              How it Works
             </Link>
           </nav>
         </div>
@@ -22,13 +22,12 @@ export default function Home() {
       <main className="flex-grow">
         {/* Hero Section */}
         <section className="py-20 sm:py-32 px-4 sm:px-6 lg:px-8 text-center">
-          <div className="max-w-3xl mx-auto space-y-8">
-            <h1 className="text-4xl sm:text-6xl font-bold tracking-tight text-gray-900 dark:text-gray-100">
-              Master Your Money with <span className="text-blue-600">Clarity</span>
+          <div className="max-w-4xl mx-auto space-y-8">
+            <h1 className="text-4xl sm:text-6xl font-bold tracking-tight text-gray-900 dark:text-gray-100 leading-tight">
+              Unlock the <span className="text-blue-600">$124 Trillion</span> Wealth Transfer
             </h1>
             <p className="text-xl text-gray-600 dark:text-gray-400 max-w-2xl mx-auto">
-              The intelligent financial companion that brings all your accounts together. 
-              Gain insights, track spending, and reach your goals faster.
+              Empowering the next generation with seamless access to their inheritance—before and beyond probate. Don&apos;t let the probate process tie up your future.
             </p>
             
             <div className="flex flex-col sm:flex-row gap-4 justify-center items-center max-w-md mx-auto mt-8">
@@ -42,40 +41,91 @@ export default function Home() {
               </button>
             </div>
             <p className="text-sm text-gray-500 dark:text-gray-500">
-              Join 2,000+ others waiting for early access.
+              Join the first online marketplace for inheritance advances.
             </p>
           </div>
         </section>
 
-        {/* Features Section */}
-        <section id="features" className="py-20 bg-white dark:bg-gray-950">
+        {/* Problem Section */}
+        <section className="py-16 bg-gray-50 dark:bg-gray-900/50">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="grid md:grid-cols-3 gap-12">
-              <div className="flex flex-col items-center text-center space-y-4">
-                <div className="p-4 bg-blue-50 dark:bg-blue-900/20 rounded-full text-blue-600">
-                  <Zap className="w-8 h-8" />
+            <div className="text-center mb-12">
+              <h2 className="text-3xl font-bold mb-4">Why Wait Years for What&apos;s Yours?</h2>
+              <p className="text-gray-600 dark:text-gray-400 max-w-2xl mx-auto">
+                Probate is a lengthy, costly process that leaves heirs in financial limbo. The time value of money matters—access your liquidity when you need it most.
+              </p>
+            </div>
+          </div>
+        </section>
+
+        {/* Products Section */}
+        <section id="products" className="py-20 bg-white dark:bg-gray-950">
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div className="grid md:grid-cols-2 gap-12">
+              {/* Advance Product */}
+              <div className="p-8 rounded-2xl border border-gray-100 dark:border-gray-800 shadow-sm hover:shadow-md transition-shadow">
+                <div className="w-12 h-12 bg-blue-100 dark:bg-blue-900/30 rounded-xl flex items-center justify-center mb-6 text-blue-600">
+                  <Clock className="w-6 h-6" />
                 </div>
-                <h3 className="text-xl font-bold">Real-time Sync</h3>
-                <p className="text-gray-600 dark:text-gray-400">
-                  Connect all your bank accounts and credit cards for a unified view of your finances in real-time.
+                <h3 className="text-2xl font-bold mb-4">Clarity Advance</h3>
+                <p className="text-gray-600 dark:text-gray-400 mb-6">
+                  <strong>Probate Lending.</strong> A seamless marketplace connecting heirs with private lenders for immediate advances during the probate process. 
+                </p>
+                <ul className="space-y-3 text-sm text-gray-500 dark:text-gray-400">
+                  <li className="flex items-center gap-2"><ShieldCheck className="w-4 h-4 text-green-500" /> Fast underwriting via court docs</li>
+                  <li className="flex items-center gap-2"><ShieldCheck className="w-4 h-4 text-green-500" /> Competitive bidding from lenders</li>
+                  <li className="flex items-center gap-2"><ShieldCheck className="w-4 h-4 text-green-500" /> Funds deposited directly to you</li>
+                </ul>
+              </div>
+
+              {/* Secure Product */}
+              <div className="p-8 rounded-2xl border border-gray-100 dark:border-gray-800 shadow-sm hover:shadow-md transition-shadow">
+                <div className="w-12 h-12 bg-purple-100 dark:bg-purple-900/30 rounded-xl flex items-center justify-center mb-6 text-purple-600">
+                  <Lock className="w-6 h-6" />
+                </div>
+                <h3 className="text-2xl font-bold mb-4">Clarity Secure</h3>
+                <p className="text-gray-600 dark:text-gray-400 mb-6">
+                  <strong>Pre-Probate Lending.</strong> Secure liquidity against future inheritance before probate even begins. Real-time asset monitoring meets flexible terms.
+                </p>
+                <ul className="space-y-3 text-sm text-gray-500 dark:text-gray-400">
+                  <li className="flex items-center gap-2"><ShieldCheck className="w-4 h-4 text-green-500" /> Real-time integration with brokerage accounts</li>
+                  <li className="flex items-center gap-2"><ShieldCheck className="w-4 h-4 text-green-500" /> Lenders bid on your loan request</li>
+                  <li className="flex items-center gap-2"><ShieldCheck className="w-4 h-4 text-green-500" /> Defer interest until termination</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* Features Grid */}
+        <section id="how-it-works" className="py-20 bg-gray-50 dark:bg-gray-900">
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div className="grid md:grid-cols-3 gap-8">
+              <div className="flex flex-col items-center text-center space-y-4">
+                <div className="p-4 bg-white dark:bg-gray-800 rounded-full shadow-sm">
+                  <Banknote className="w-6 h-6 text-blue-600" />
+                </div>
+                <h3 className="text-lg font-bold">Marketplace Model</h3>
+                <p className="text-sm text-gray-600 dark:text-gray-400">
+                  We bring lenders to you. Get competitive rates through our bidding system instead of high-interest direct loans.
                 </p>
               </div>
               <div className="flex flex-col items-center text-center space-y-4">
-                <div className="p-4 bg-blue-50 dark:bg-blue-900/20 rounded-full text-blue-600">
-                  <Shield className="w-8 h-8" />
+                <div className="p-4 bg-white dark:bg-gray-800 rounded-full shadow-sm">
+                  <ShieldCheck className="w-6 h-6 text-blue-600" />
                 </div>
-                <h3 className="text-xl font-bold">Bank-Grade Security</h3>
-                <p className="text-gray-600 dark:text-gray-400">
-                  Your data is encrypted with the same level of security used by major banks. We never sell your data.
+                <h3 className="text-lg font-bold">Real-time Underwriting</h3>
+                <p className="text-sm text-gray-600 dark:text-gray-400">
+                  Our API integrations with brokerage and bank accounts allow for instant verification and faster funding.
                 </p>
               </div>
               <div className="flex flex-col items-center text-center space-y-4">
-                <div className="p-4 bg-blue-50 dark:bg-blue-900/20 rounded-full text-blue-600">
-                  <CheckCircle2 className="w-8 h-8" />
+                <div className="p-4 bg-white dark:bg-gray-800 rounded-full shadow-sm">
+                  <Lock className="w-6 h-6 text-blue-600" />
                 </div>
-                <h3 className="text-xl font-bold">Smart Insights</h3>
-                <p className="text-gray-600 dark:text-gray-400">
-                  Get personalized recommendations to save money and optimize your spending habits automatically.
+                <h3 className="text-lg font-bold">Secure & Confidential</h3>
+                <p className="text-sm text-gray-600 dark:text-gray-400">
+                  Your data is encrypted. We use tri-party contracts and pre-settlement mediation to ensure security for all parties.
                 </p>
               </div>
             </div>
@@ -84,10 +134,17 @@ export default function Home() {
       </main>
 
       {/* Footer */}
-      <footer className="py-10 px-4 sm:px-6 lg:px-8 border-t border-gray-100 dark:border-gray-800 text-center">
-        <p className="text-gray-500 dark:text-gray-400 text-sm">
-          © {new Date().getFullYear()} Clarity Finance. All rights reserved.
-        </p>
+      <footer className="py-10 px-4 sm:px-6 lg:px-8 border-t border-gray-100 dark:border-gray-800">
+        <div className="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-4">
+          <p className="text-gray-500 dark:text-gray-400 text-sm">
+            © {new Date().getFullYear()} Clarity Finance. All rights reserved.
+          </p>
+          <div className="flex gap-6">
+            <Link href="#" className="text-sm text-gray-500 hover:text-gray-900 dark:hover:text-gray-100">Privacy Policy</Link>
+            <Link href="#" className="text-sm text-gray-500 hover:text-gray-900 dark:hover:text-gray-100">Terms of Service</Link>
+            <a href="mailto:mg@mattgoulet.ca" className="text-sm text-gray-500 hover:text-gray-900 dark:hover:text-gray-100">Contact</a>
+          </div>
+        </div>
       </footer>
     </div>
   );
