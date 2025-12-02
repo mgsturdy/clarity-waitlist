@@ -73,36 +73,6 @@ export default function Home() {
       <section className="min-h-screen flex flex-col justify-center items-center px-6 lg:px-12 py-20">
         <div className="max-w-4xl mx-auto w-full">
           
-          {/* Value Props */}
-          <div className="text-center mb-16">
-            <p className="font-serif text-2xl sm:text-3xl font-medium mb-12">
-              We&apos;re changing that.
-            </p>
-            
-            <ul className="font-body text-lg sm:text-xl space-y-4 text-left max-w-xl mx-auto">
-              <li className="flex items-start gap-3">
-                <span className="opacity-40 mt-1">•</span>
-                <span>Real-time bidding from private lenders & family offices</span>
-              </li>
-              <li className="flex items-start gap-3">
-                <span className="opacity-40 mt-1">•</span>
-                <span>Average effective rates &lt;20% (often 12–18%)</span>
-              </li>
-              <li className="flex items-start gap-3">
-                <span className="opacity-40 mt-1">•</span>
-                <span>Funds wired in days, not months</span>
-              </li>
-              <li className="flex items-start gap-3">
-                <span className="opacity-40 mt-1">•</span>
-                <span>Works pre-probate and during probate</span>
-              </li>
-              <li className="flex items-start gap-3">
-                <span className="opacity-40 mt-1">•</span>
-                <span>Zero cost to list—you only pay if you accept a deal</span>
-              </li>
-            </ul>
-          </div>
-          
           {/* Form */}
           <div className="max-w-lg mx-auto">
             <p className="font-serif text-2xl sm:text-3xl font-medium text-center mb-10">
