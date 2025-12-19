@@ -27,7 +27,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <head>
+      <body
+        className={`${playfair.variable} ${crimson.variable} antialiased`}
+      >
         <Script
           src="https://www.googletagmanager.com/gtag/js?id=AW-17773212351"
           strategy="afterInteractive"
@@ -40,10 +42,6 @@ export default function RootLayout({
             gtag('config', 'AW-17773212351');
           `}
         </Script>
-      </head>
-      <body
-        className={`${playfair.variable} ${crimson.variable} antialiased`}
-      >
         {children}
       </body>
     </html>
